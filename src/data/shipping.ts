@@ -1,9 +1,4 @@
-export type ShippingRate = {
-  state: string;
-  city: string;
-  branch: string;
-  total: number;
-};
+export type ShippingRate = { state: string; city: string; branch: string; total: number };
 
 export const shippingRates: ShippingRate[] = [
   { state: "Alabama", city: "BIRMINGHAM", branch: "AL – BIRMINGHAM", total: 1168 },
@@ -61,8 +56,7 @@ export const shippingRates: ShippingRate[] = [
   { state: "Georgia", city: "LAKE CITY", branch: "GA - LAKE CITY", total: 1113 },
   { state: "Georgia", city: "ATLANTA EAST", branch: "GA - ATLANTA", total: 1098 },
   { state: "Georgia", city: "CARTERSVILLE", branch: "GA - CARTERSVILLE", total: 1113 },
-  { state: "Georgia", city: "JACKSONVILLE 
-NORTH", branch: "FL - JACKSONVILLE NORTH", total: 1033 },
+  { state: "Georgia", city: "JACKSONVILLE NORTH", branch: "FL - JACKSONVILLE NORTH", total: 1033 },
   { state: "Georgia", city: "King", branch: "NC: King", total: 1338 },
   { state: "Georgia", city: "KING", branch: "NC - KING", total: 1338 },
   { state: "Kentucky", city: "WALTON", branch: "KY - WALTON", total: 1363 },
@@ -70,11 +64,9 @@ NORTH", branch: "FL - JACKSONVILLE NORTH", total: 1033 },
   { state: "Kentucky", city: "PADUCAH", branch: "KY - PADUCAH", total: 1388 },
   { state: "Kentucky", city: "EARLINGTON", branch: "KY - EARLINGTON", total: 1413 },
   { state: "Kentucky", city: "LOUISVILLE", branch: "KY - LOUISVILLE", total: 1398 },
-  { state: "Kentucky", city: "BOWLING 
-GREEN", branch: "KY - BOWLING GREEN", total: 1318 },
+  { state: "Kentucky", city: "BOWLING GREEN", branch: "KY - BOWLING GREEN", total: 1318 },
   { state: "Kentucky", city: "STERLING", branch: "KY - STERLING", total: 1363 },
-  { state: "Kentucky", city: "LOUISVILLE 
-NORTH", branch: "KY - LOUISVILLE NORTH", total: 1398 },
+  { state: "Kentucky", city: "LOUISVILLE NORTH", branch: "KY - LOUISVILLE NORTH", total: 1398 },
   { state: "Mississippi", city: "GULF COAST", branch: "MS - GULF COAST", total: 1283 },
   { state: "Mississippi", city: "JACKSON", branch: "MS - JACKSON", total: 1283 },
   { state: "Mississippi", city: "GRENADA", branch: "MS - GRENADA", total: 1303 },
@@ -157,8 +149,7 @@ NORTH", branch: "KY - LOUISVILLE NORTH", total: 1398 },
   { state: "Indiana", city: "Jeffersonville", branch: "IN - Jeffersonville", total: 1663 },
   { state: "Iowa", city: "CEDAR RAPIDS", branch: "IA - CEDAR RAPIDS", total: 1588 },
   { state: "Iowa", city: "Marion", branch: "IA - MARION PRIVATE LOCATION", total: 1613 },
-  { state: "Iowa", city: "DES MOINES PRIVATE LOCATION", branch: "IA - DES MOINES PRIVATE 
-LOCATION", total: 1663 },
+  { state: "Iowa", city: "DES MOINES PRIVATE LOCATION", branch: "IA - DES MOINES PRIVATE LOCATION", total: 1663 },
   { state: "Iowa", city: "AMES", branch: "IA - AMES", total: 1663 },
   { state: "Maine", city: "PORTLAND GORHAM", branch: "ME - PORTLAND GORHAM", total: 1363 },
   { state: "Maine", city: "WINDHAM", branch: "ME - WINDHAM", total: 1363 },
@@ -198,9 +189,7 @@ LOCATION", total: 1663 },
   { state: "Massachusetts", city: "UXBRIDGE", branch: "MA - UXBRIDGE", total: 1313 },
   { state: "Massachusetts", city: "SHIRLEY", branch: "MA - SHIRLEY", total: 1238 },
   { state: "Massachusetts", city: "Revere", branch: "MA - REVERE PRIVATE LOCATION", total: 1338 },
-  { state: "Massachusetts", city: "NORTH BILLERICA PRIVATE 
-LOCATION", branch: "MA - NORTH BILLERICA PRIVATE 
-LOCATION", total: 1218 },
+  { state: "Massachusetts", city: "NORTH BILLERICA PRIVATE LOCATION", branch: "MA - NORTH BILLERICA PRIVATE LOCATION", total: 1218 },
   { state: "Massachusetts", city: "MEDFORD", branch: "MA - MEDFORD", total: 1363 },
   { state: "Massachusetts", city: "HUDSON", branch: "MA - HUDSON", total: 1218 },
   { state: "Massachusetts", city: "ACTON", branch: "MA - ACTON", total: 1313 },
@@ -346,8 +335,7 @@ LOCATION", total: 1218 },
   { state: "Colorado", city: "DENVER SOUTH", branch: "CO - DENVER SOUTH", total: 1823 },
   { state: "Kansas", city: "KANSAS CITY", branch: "KS - KANSAS CITY", total: 1653 },
   { state: "Kansas", city: "WICHITA", branch: "KS - WICHITA", total: 1588 },
-  { state: "Kansas", city: "LAWRENCE PRIVATE 
-LOCATION", branch: "KS - LAWRENCE PRIVATE", total: 1653 },
+  { state: "Kansas", city: "LAWRENCE PRIVATE LOCATION", branch: "KS - LAWRENCE PRIVATE", total: 1653 },
   { state: "Louisiana", city: "BATON ROUGE", branch: "LA - BATON ROUGE", total: 1398 },
   { state: "Louisiana", city: "NEW ORLEANS", branch: "LA - NEW ORLEANS", total: 1418 },
   { state: "Louisiana", city: "LAFAYETTE", branch: "LA - LAFAYETTE", total: 1398 },
@@ -358,9 +346,7 @@ LOCATION", branch: "KS - LAWRENCE PRIVATE", total: 1653 },
   { state: "New Mexico", city: "ALBUQUERQUE", branch: "NM - ALBUQUERQUE", total: 1653 },
   { state: "Oklahoma", city: "OKLAHOMA CITY", branch: "OK - OKLAHOMA CITY", total: 1483 },
   { state: "Oklahoma", city: "TULSA", branch: "OK - TULSA", total: 1483 },
-  { state: "Oklahoma", city: "BROKEN ARROW PRIVATE 
-LOCATION", branch: "OK - BROKEN ARROW 
-PRIVATE", total: 1728 },
+  { state: "Oklahoma", city: "BROKEN ARROW PRIVATE LOCATION", branch: "OK - BROKEN ARROW PRIVATE", total: 1728 },
   { state: "Texas", city: "HOUSTON", branch: "TX - HOUSTON", total: 1273 },
   { state: "Texas", city: "LONGVIEW", branch: "TX - LONGVIEW", total: 1348 },
   { state: "Texas", city: "FORT WORTH NORTH", branch: "TX - FORT WORTH NORTH", total: 1383 },
