@@ -87,10 +87,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "گواستنەوەی ئۆتۆمبێل - PNYANSH CARS SHIPPING" },
       {
         property: "og:description",
-        content: "داشبۆردی نرخی گواستنەوەی ئۆتۆمبێل — گەڕانی خێرا بەپێی ویلایەت و شار.",
+        content: "داشبۆردی نرخی گواستنەوەی ئۆتۆمبێل بۆ کۆمپانیای PNYANSH — گەڕان بەپێی ویلایەت و شار و لق.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "گواستنەوەی ئۆتۆمبێل - PNYANSH CARS SHIPPING" },
+      { name: "twitter:description", content: "داشبۆردی نرخی گواستنەوەی ئۆتۆمبێل بۆ کۆمپانیای PNYANSH — گەڕان بەپێی ویلایەت و شار و لق." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/766d07f9-3dc3-4108-979c-c989ed15fd2a/id-preview-4594649a--84630acb-84c7-4c8b-b906-aa113a4b1ac4.lovable.app-1783720104873.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/766d07f9-3dc3-4108-979c-c989ed15fd2a/id-preview-4594649a--84630acb-84c7-4c8b-b906-aa113a4b1ac4.lovable.app-1783720104873.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
