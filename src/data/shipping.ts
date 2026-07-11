@@ -9,20 +9,15 @@ export const shippingRates: ShippingRate[] = [
   { state: "ALABAMA", city: "MONTGOMERY", branch: "AL – MONTGOMERY", total: 1178 },
   { state: "ALABAMA", city: "TANNER", branch: "AL - TANNER", total: 1178 },
   { state: "Alabama", city: "AL: PIKE ROAD", branch: "AL - PIKE ROAD", total: 1238 },
-  { state: "Alabama", city: "ALBERTVILLE
-PRIVATE
-LOCATION", branch: "AL - ALBERTVILLE PRIVATE
-LOCATION", total: 1588 },
+  { state: "Alabama", city: "ALBERTVILLE PRIVATE LOCATION", branch: "AL - ALBERTVILLE PRIVATE LOCATION", total: 1588 },
   { state: "Alabama", city: "HEADLAND", branch: "AL - HEADLAND", total: 1168 },
   { state: "Alabama", city: "ATHENS", branch: "AL - ATHENS", total: 1238 },
   { state: "Florida", city: "MULBERRY", branch: "FL - MULBERRY", total: 1138 },
   { state: "Florida", city: "THONOTOSASSA", branch: "FL - THONOTOSASSA", total: 1138 },
   { state: "Florida", city: "TAMPA PRIVATE", branch: "FL - TAMPA PRIVATE LOCATION", total: 1138 },
-  { state: "Florida", city: "PUNTA GORDA
-SOUTH", branch: "FL - PUNTA GORDA SOUTH", total: 1183 },
+  { state: "Florida", city: "PUNTA GORDA SOUTH", branch: "FL - PUNTA GORDA SOUTH", total: 1183 },
   { state: "Florida", city: "PEMBROKE", branch: "FL - PEMBROKE PINES", total: 1238 },
-  { state: "Florida", city: "ORLANDO
-SOUTH", branch: "FL - ORLANDO SOUTH", total: 1113 },
+  { state: "Florida", city: "ORLANDO SOUTH", branch: "FL - ORLANDO SOUTH", total: 1113 },
   { state: "Florida", city: "ORLANDO", branch: "FL - ORLANDO NORTH", total: 1113 },
   { state: "Florida", city: "MILTON", branch: "FL - MILTON", total: 1188 },
   { state: "Florida", city: "FL: Jupiter", branch: "FL - JUPITER", total: 1153 },
@@ -30,13 +25,9 @@ SOUTH", branch: "FL - ORLANDO SOUTH", total: 1113 },
   { state: "Florida", city: "HUDSON", branch: "FL - HUDSON", total: 1133 },
   { state: "Florida", city: "FT. PIERCE", branch: "FL - FT. PIERCE", total: 1138 },
   { state: "Florida", city: "CLEWISTON", branch: "FL - CLEWISTON", total: 1273 },
-  { state: "Florida", city: "BOCA RATON
-PRIVATE
-LOCATION", branch: "FL - BOCA RATON PRIVATE
-LOCATION", total: 1188 },
+  { state: "Florida", city: "BOCA RATON PRIVATE LOCATION", branch: "FL - BOCA RATON PRIVATE LOCATION", total: 1188 },
   { state: "Florida", city: "CLEARWATER", branch: "FL - CLEARWATER", total: 1113 },
-  { state: "Florida", city: "WEST PALM
-BEACH", branch: "FL - WEST PALM BEACH", total: 1153 },
+  { state: "Florida", city: "WEST PALM BEACH", branch: "FL - WEST PALM BEACH", total: 1153 },
   { state: "Florida", city: "TAMPA SOUTH", branch: "FL - TAMPA SOUTH", total: 1123 },
   { state: "Florida", city: "TAMPA NORTH", branch: "FL - TAMPA NORTH", total: 1133 },
   { state: "Florida", city: "TAMPA", branch: "FL - TAMPA", total: 1123 },
@@ -96,8 +87,7 @@ BEACH", branch: "FL - WEST PALM BEACH", total: 1153 },
   { state: "North Carolina", city: "GASTONIA", branch: "NC - GASTONIA", total: 1108 },
   { state: "North Carolina", city: "High Point", branch: "NC - High Point", total: 1188 },
   { state: "North Carolina", city: "LUMBERTON", branch: "NC - LUMBERTON", total: 1123 },
-  { state: "North Carolina", city: "SOUTHERN
-PINES", branch: "NC - SOUTHERN PINES", total: 1213 },
+  { state: "North Carolina", city: "SOUTHERN PINES", branch: "NC - SOUTHERN PINES", total: 1213 },
   { state: "SOUTH CAROLINA", city: "GREER", branch: "SC - GREER", total: 1133 },
   { state: "SOUTH CAROLINA", city: "SPARTANBURG", branch: "SC - SPARTANBURG", total: 1113 },
   { state: "SOUTH CAROLINA", city: "LEXINGTON", branch: "SC - LEXINGTON", total: 1078 },
@@ -105,33 +95,22 @@ PINES", branch: "NC - SOUTHERN PINES", total: 1213 },
   { state: "SOUTH CAROLINA", city: "CHARLESTON", branch: "SC - CHARLESTON", total: 1103 },
   { state: "SOUTH CAROLINA", city: "COLUMBIA", branch: "SC - COLUMBIA", total: 1103 },
   { state: "South Carolina", city: "GASTON", branch: "SC - GASTON", total: 1103 },
-  { state: "South Carolina", city: "COLUMBIA
-PRIVATE
-LOCATION", branch: "SC - COLUMBIA PRIVATE
-LOCATION", total: 1103 },
+  { state: "South Carolina", city: "COLUMBIA PRIVATE LOCATION", branch: "SC - COLUMBIA PRIVATE LOCATION", total: 1103 },
   { state: "South Carolina", city: "MONCKS", branch: "SC - MONCKS CORNER", total: 1113 },
-  { state: "South Carolina", city: "NORTH
-CHARLESTON", branch: "SC - NORTH CHARLESTON", total: 1103 },
-  { state: "South Carolina", city: "COLUMBIA", branch: "SC - COLUMBIA PRIVATE
-LOCATION", total: 1103 },
+  { state: "South Carolina", city: "NORTH CHARLESTON", branch: "SC - NORTH CHARLESTON", total: 1103 },
+  { state: "South Carolina", city: "COLUMBIA", branch: "SC - COLUMBIA PRIVATE LOCATION", total: 1103 },
   { state: "South Carolina", city: "WILLIAMSTON", branch: "SC - WILLIAMSTON", total: 1208 },
   { state: "South Carolina", city: "SC - COLUMBIA", branch: "COLUMBIA PRIVATE LOCATION", total: 1103 },
   { state: "TENNESSEE", city: "CHATTANOOGA", branch: "TN - CHATTANOOGA", total: 1213 },
   { state: "TENNESSEE", city: "NASHVILLE", branch: "TN - NASHVILLE", total: 1238 },
   { state: "TENNESSEE", city: "MEMPHIS", branch: "TN - MEMPHIS", total: 1293 },
   { state: "TENNESSEE", city: "KNOXVILLE", branch: "TN - KNOXVILLE", total: 1203 },
-  { state: "Tennessee", city: "NASHVILLE
-PRIVATE
-LOCATION", branch: "TN - NASHVILLE PRIVATE
-LOCATION", total: 1363 },
+  { state: "Tennessee", city: "NASHVILLE PRIVATE LOCATION", branch: "TN - NASHVILLE PRIVATE LOCATION", total: 1363 },
   { state: "CONNECTICUT", city: "HARTFORD", branch: "CT - HARTFORD", total: 1163 },
   { state: "CONNECTICUT", city: "HARTFORD SOUTH", branch: "CT - HARTFORD SOUTH", total: 1178 },
-  { state: "Connecticut", city: "WEST HAVEN PRIVATE LOCATION", branch: "CT - WEST HAVEN PRIVATE
-LOCATION", total: 1263 },
+  { state: "Connecticut", city: "WEST HAVEN PRIVATE LOCATION", branch: "CT - WEST HAVEN PRIVATE LOCATION", total: 1263 },
   { state: "Connecticut", city: "NEW BRITAIN", branch: "CT - NEW BRITAIN", total: 1178 },
-  { state: "Connecticut", city: "WEST HARDFORD PRIVATE
-LOCATION", branch: "CT - WEST HARDFORD PRIVATE
-LOCATION", total: 1313 },
+  { state: "Connecticut", city: "WEST HARDFORD PRIVATE LOCATION", branch: "CT - WEST HARDFORD PRIVATE LOCATION", total: 1313 },
   { state: "DELAWARE", city: "SEAFORD", branch: "DE - SEAFORD", total: 1213 },
   { state: "Delaware", city: "NEW CASTLE", branch: "DE - NEW CASTLE", total: 1183 },
   { state: "Delaware", city: "NEW CASTLE", branch: "DE - NEW CASTLE", total: 1183 },
@@ -331,11 +310,9 @@ LOCATION", total: 1313 },
   { state: "VIRGINIA", city: "TIDEWATER", branch: "VA - TIDEWATER", total: 1263 },
   { state: "Vermont", city: "RUTLAND", branch: "VT - RUTLAND", total: 1413 },
   { state: "Vermont", city: "ESSEX JUNCTION", branch: "VT - ESSEX JUNCTION", total: 1463 },
-  { state: "Virginia", city: "ROCKVILLE PRIVATE LOCATION", branch: "VA - ROCKVILLE PRIVATE
-LOCATION", total: 1388 },
+  { state: "Virginia", city: "ROCKVILLE PRIVATE LOCATION", branch: "VA - ROCKVILLE PRIVATE LOCATION", total: 1388 },
   { state: "Virginia", city: "Fredericksburg", branch: "VA - FREDERICKSBURG", total: 1228 },
-  { state: "Virginia", city: "ALEXANDRIA PRIVATE LOCATION", branch: "VA - ALEXANDRIA PRIVATE
-LOCATION", total: 1388 },
+  { state: "Virginia", city: "ALEXANDRIA PRIVATE LOCATION", branch: "VA - ALEXANDRIA PRIVATE LOCATION", total: 1388 },
   { state: "Virginia", city: "ARLINGTON PRIVATE LOCATION", branch: "VA - ARLINGTON PRIVATE", total: 1263 },
   { state: "Virginia", city: "NORTHERN VIRGINIA", branch: "VA - NORTHERN VIRGINIA", total: 1228 },
   { state: "WEST VIRGINIA", city: "CHARLESTON", branch: "WV - CHARLESTON", total: 1448 },
@@ -371,9 +348,7 @@ LOCATION", total: 1388 },
   { state: "NEW MEXICO", city: "ALBUQUERQUE", branch: "NM - ALBUQUERQUE", total: 2086 },
   { state: "OKLAHOMA", city: "OKLAHOMA CITY", branch: "OK - OKLAHOMA CITY", total: 1916 },
   { state: "OKLAHOMA", city: "TULSA", branch: "OK - TULSA", total: 1916 },
-  { state: "Oklahoma", city: "BROKEN ARROW PRIVATE
-LOCATION", branch: "OK - BROKEN ARROW
-PRIVATE", total: 2161 },
+  { state: "Oklahoma", city: "BROKEN ARROW PRIVATE LOCATION", branch: "OK - BROKEN ARROW PRIVATE", total: 2161 },
   { state: "TEXAS", city: "HOUSTON", branch: "TX - HOUSTON", total: 1706 },
   { state: "TEXAS", city: "LONGVIEW", branch: "TX - LONGVIEW", total: 1781 },
   { state: "TEXAS", city: "FORT WORTH NORTH", branch: "TX - FORT WORTH NORTH", total: 1816 },
@@ -395,9 +370,7 @@ PRIVATE", total: 2161 },
   { state: "Texas", city: "Abilene", branch: "TX - Abilene", total: 1901 },
   { state: "Texas", city: "TX - SAN ANTONIO SOUTH", branch: "SAN ANTONIO SOUTH", total: 1766 },
   { state: "Texas", city: "ANDREWS", branch: "TX - ANDREWS", total: 1936 },
-  { state: "Texas", city: "NORTH RICHLAND HILLS
-PRIVATE LOCATION", branch: "TX - NORTH RICHLAND HILLS
-PRIVATE LOCATION", total: 1856 },
+  { state: "Texas", city: "NORTH RICHLAND HILLS PRIVATE LOCATION", branch: "TX - NORTH RICHLAND HILLS PRIVATE LOCATION", total: 1856 },
   { state: "Texas", city: "Conroe", branch: "TX - Conroe", total: 1736 },
   { state: "Texas", city: "HOUSTON SOUTH", branch: "TX - HOUSTON SOUTH", total: 1701 },
   { state: "Texas", city: "HOUSTON PRIVATE LOCATION", branch: "TX - HOUSTON PRIVATE", total: 1736 },
@@ -407,9 +380,7 @@ PRIVATE LOCATION", total: 1856 },
   { state: "Texas", city: "FT.WORTH", branch: "TX - FT.WORTH", total: 1766 },
   { state: "Texas", city: "Dallas/Ft Worth", branch: "TX - Dallas/Ft Worth", total: 1816 },
   { state: "Wisconsin", city: "MADISON PRIVATE LOCATION", branch: "WI - MADISON PRIVATE", total: 2236 },
-  { state: "Wisconsin", city: "MILWAUKEE PRIVATE
-LOCATION", branch: "WI - MILWAUKEE PRIVATE
-LOCATION", total: 2236 },
+  { state: "Wisconsin", city: "MILWAUKEE PRIVATE LOCATION", branch: "WI - MILWAUKEE PRIVATE LOCATION", total: 2236 },
   { state: "Wisconsin", city: "MILWAUKEE SOUTH", branch: "WI - MILWAUKEE SOUTH", total: 2186 },
   { state: "ARIZONA", city: "TOLLESON", branch: "AZ - TOLLESON", total: 2068 },
   { state: "ARIZONA", city: "CHANDLER", branch: "AZ - CHANDLER", total: 2053 },
@@ -467,8 +438,7 @@ LOCATION", total: 2236 },
   { state: "California", city: "RIVERSIDE", branch: "CA - RIVERSIDE", total: 1933 },
   { state: "California", city: "SACRAMENTO WEST", branch: "CA - SACRAMENTO WEST", total: 2118 },
   { state: "California", city: "CARMICHAEL PRIVATE LOCATION", branch: "CA - CARMICHAEL PRIVATE", total: 2223 },
-  { state: "California", city: "SAN RAMON PRIVATE LOCATION", branch: "CA - SAN RAMON PRIVATE
-LOCATION", total: 2148 },
+  { state: "California", city: "SAN RAMON PRIVATE LOCATION", branch: "CA - SAN RAMON PRIVATE LOCATION", total: 2148 },
   { state: "Colorado", city: "GOLDEN PRIVATE LOCATION", branch: "CO - GOLDEN PRIVATE LOCATION", total: 2573 },
   { state: "Hawaii", city: "HONOLULU", branch: "HI - HONOLULU", total: 3773 },
   { state: "Hawaii", city: "KAPOLEI", branch: "HI - KAPOLEI", total: 3773 },
@@ -500,7 +470,6 @@ LOCATION", total: 2148 },
   { state: "Washington", city: "VANCOUVER", branch: "WA - VANCOUVER", total: 2423 },
   { state: "Washington", city: "SPANAWAY", branch: "WA - SPANAWAY", total: 2423 },
   { state: "Washington", city: "SEATTLE", branch: "WA - SEATTLE", total: 2373 },
-  { state: "Washington", city: "LONGVIEW PRIVATE LOCATION", branch: "WA - LONGVIEW PRIVATE
-LOCATION", total: 2673 },
+  { state: "Washington", city: "LONGVIEW PRIVATE LOCATION", branch: "WA - LONGVIEW PRIVATE LOCATION", total: 2673 },
   { state: "Washington", city: "FEDERAL WAY PRIVATE LOCATION", branch: "WA - FEDERAL WAY PRIVATE", total: 2473 },
 ];
