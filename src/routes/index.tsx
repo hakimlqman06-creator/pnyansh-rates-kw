@@ -48,7 +48,7 @@ function Dashboard() {
             <h1 className="truncate text-xl font-bold leading-tight sm:text-2xl">
               گواستنەوەی ئۆتۆمبێل
             </h1>
-            <p dir="ltr" className="truncate text-right text-xs text-white/70 sm:text-sm">
+            <p dir="ltr" className="truncate text-right text-xs text-white/90 sm:text-sm">
               PNYANSH CARS SHIPPING
             </p>
           </div>
@@ -192,7 +192,7 @@ function Dashboard() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-5 py-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="text-lg font-bold">کۆمپانیای PNYANSH</h3>
-            <p className="mt-2 text-sm text-white/70">
+            <p className="mt-2 text-sm text-white/90">
               خزمەتگوزاری گواستنەوەی ئۆتۆمبێل لە ئەمریکاوە بۆ عێراق
             </p>
           </div>
@@ -216,7 +216,7 @@ function Dashboard() {
           </FooterItem>
         </div>
         <div className="border-t border-white/10">
-          <p className="mx-auto max-w-6xl px-5 py-4 text-center text-xs text-white/60">
+          <p className="mx-auto max-w-6xl px-5 py-4 text-center text-xs text-white/90">
             © {new Date().getFullYear()} PNYANSH CARS SHIPPING
           </p>
         </div>
@@ -245,7 +245,7 @@ function FooterItem({
 }) {
   return (
     <div>
-      <div className="flex items-center gap-2 text-xs text-white/60">
+      <div className="flex items-center gap-2 text-xs text-white/90">
         {icon}
         <span>{label}</span>
       </div>
