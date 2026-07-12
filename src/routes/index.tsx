@@ -106,7 +106,7 @@ function Dashboard() {
               >
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
-                    <p className="text-[11px] font-semibold uppercase tracking-wide text-muted">
+                    <p className="text-[11px] font-bold uppercase tracking-wide text-ink">
                       ویلایەت
                     </p>
                     <p dir="ltr" className="truncate text-right text-base font-bold text-navy">
@@ -123,13 +123,13 @@ function Dashboard() {
 
                 <div className="mt-4 grid grid-cols-2 gap-3 border-t border-navy/5 pt-4">
                   <div className="min-w-0">
-                    <p className="text-[11px] font-semibold text-muted">شار</p>
+                    <p className="text-[11px] font-bold text-ink">شار</p>
                     <p dir="ltr" className="truncate text-right text-sm font-medium text-ink">
                       {r.city}
                     </p>
                   </div>
                   <div className="min-w-0">
-                    <p className="text-[11px] font-semibold text-muted">لق</p>
+                    <p className="text-[11px] font-bold text-ink">لق</p>
                     <p dir="ltr" className="truncate text-right text-sm font-medium text-ink">
                       {r.branch}
                     </p>
@@ -137,9 +137,10 @@ function Dashboard() {
                 </div>
 
                 <div className="mt-4 flex items-center justify-between border-t border-navy/5 pt-3">
-                  <span className="text-[11px] text-muted">تێچووی گواستنەوە</span>
-                  <span className="text-[11px] font-semibold text-emerald-600">بەردەستە</span>
+                  <span className="text-[11px] font-semibold text-ink">تێچووی گواستنەوە</span>
+                  <span className="text-[11px] font-bold text-emerald-700">بەردەستە</span>
                 </div>
+
               </article>
             ))}
           </div>
