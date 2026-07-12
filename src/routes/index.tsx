@@ -40,18 +40,35 @@ function Dashboard() {
     <div dir="rtl" className="min-h-screen bg-canvas font-kurdish text-ink">
       {/* Header */}
       <header className="border-b border-navy/10 bg-navy text-white">
-        <div className="mx-auto flex max-w-6xl items-center gap-4 px-5 py-6">
-          <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-white/10 ring-1 ring-white/20">
-            <Truck className="h-6 w-6" />
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-5 sm:py-6">
+          <div className="flex items-center gap-4">
+            <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-white/10 ring-1 ring-white/20">
+              <Truck className="h-6 w-6" />
+            </div>
+            <div className="min-w-0">
+              <h1 className="truncate text-xl font-bold leading-tight sm:text-2xl">
+                گواستنەوەی ئۆتۆمبێل
+              </h1>
+              <p dir="ltr" className="truncate text-right text-xs text-white sm:text-sm">
+                PNYANSH CARS SHIPPING
+              </p>
+            </div>
           </div>
-          <div className="min-w-0">
-            <h1 className="truncate text-xl font-bold leading-tight sm:text-2xl">
-              گواستنەوەی ئۆتۆمبێل
-            </h1>
-            <p dir="ltr" className="truncate text-right text-xs text-white sm:text-sm">
-              PNYANSH CARS SHIPPING
-            </p>
-          </div>
+
+          <nav className="flex items-center gap-2 sm:gap-3" aria-label="ناوبەرگری سەرەوە">
+            <a
+              href="#details"
+              className="rounded-lg px-3 py-2 text-sm font-medium text-white/90 transition hover:bg-white/10 hover:text-white"
+            >
+              وردەکاریەکان
+            </a>
+            <a
+              href="#about-company"
+              className="rounded-lg px-3 py-2 text-sm font-medium text-white/90 transition hover:bg-white/10 hover:text-white"
+            >
+              دەربارەی کۆمپانیا
+            </a>
+          </nav>
         </div>
       </header>
 
@@ -148,7 +165,7 @@ function Dashboard() {
       </main>
 
       {/* Rules */}
-      <section className="border-t border-navy/10 bg-white">
+      <section id="details" className="border-t border-navy/10 bg-white">
         <div className="mx-auto max-w-6xl px-5 py-8">
           <button
             onClick={() => setShowRules((s) => !s)}
@@ -235,7 +252,7 @@ function Dashboard() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-navy/10 bg-navy text-white">
+      <footer id="about-company" className="border-t border-navy/10 bg-navy text-white">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-5 py-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="text-lg font-bold">کۆمپانیای PNYANSH</h3>
