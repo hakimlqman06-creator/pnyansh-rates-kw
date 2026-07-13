@@ -89,7 +89,7 @@ function Dashboard() {
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="Texas, Los Angeles, Miami..."
-              className="w-full rounded-2xl border border-navy/15 bg-white py-4 pl-12 pr-12 text-right text-base text-ink shadow-soft outline-none transition placeholder:text-muted/70 focus:border-navy focus:ring-4 focus:ring-navy/10"
+              className="w-full rounded-2xl border border-[#374151] bg-white py-4 pl-12 pr-12 text-right text-base text-ink shadow-soft outline-none transition placeholder:text-[#374151] focus:border-navy focus:ring-4 focus:ring-navy/10"
             />
             {q && (
               <button
