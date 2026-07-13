@@ -280,9 +280,28 @@ function Dashboard() {
           </FooterItem>
         </div>
         <div className="border-t border-white/10">
-          <p className="mx-auto max-w-6xl px-5 py-4 text-center text-xs text-white">
-            © {new Date().getFullYear()} PNYANSH CARS SHIPPING
-          </p>
+          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-4 sm:flex-row">
+            <p className="text-center text-xs text-white sm:text-right">
+              © {new Date().getFullYear()} PNYANSH CARS SHIPPING
+            </p>
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/20"
+              aria-label="گەڕانەوە بۆ سەرەوەی پەڕە"
+            >
+              Home
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+              </svg>
+            </button>
+          </div>
         </div>
       </footer>
     </div>
