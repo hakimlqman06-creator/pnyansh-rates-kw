@@ -142,7 +142,7 @@ function Dashboard() {
             )}
           </div>
 
-          <p className="mt-4 text-xs text-muted">
+          <p className="mt-4 text-xs text-muted-foreground">
             {results.length} ئەنجام لە {shippingRates.length} تۆمار
           </p>
         </div>
@@ -153,7 +153,7 @@ function Dashboard() {
       <main className="mx-auto max-w-6xl px-5 py-8">
         {results.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-navy/20 bg-white p-10 text-center">
-            <p className="text-sm text-muted">هیچ ئەنجامێک نەدۆزرایەوە</p>
+            <p className="text-sm text-muted-foreground">هیچ ئەنجامێک نەدۆزرایەوە</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -218,7 +218,7 @@ function Dashboard() {
               </div>
               <div>
                 <p className="font-bold text-navy">تێبینی و وردەکارییەکان</p>
-                <p className="text-xs text-muted">یاسا و کرێی زیادە</p>
+                <p className="text-xs text-muted-foreground">یاسا و کرێی زیادە</p>
               </div>
             </div>
             <ChevronDown
