@@ -83,18 +83,18 @@ function Dashboard() {
           </p>
 
           <div className="relative mx-auto mt-6 max-w-xl">
-            <Search className="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted" />
+            <Search className="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-ink" />
             <input
               dir="ltr"
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="Texas, Los Angeles, Miami..."
-              className="w-full rounded-2xl border border-[#374151] bg-white py-4 pl-12 pr-12 text-right text-base text-ink shadow-soft outline-none transition placeholder:text-[#374151] focus:border-navy focus:ring-4 focus:ring-navy/10"
+              className="w-full rounded-2xl border-2 border-[#1f2937] bg-white py-4 pl-14 pr-14 text-right text-base text-ink shadow-soft outline-none transition placeholder:text-[#4b5563] focus:border-navy focus:ring-4 focus:ring-navy/10"
             />
             {q && (
               <button
                 onClick={() => setQ("")}
-                className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full p-1.5 text-muted hover:bg-navy/5"
+                className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-navy/10 p-2 text-ink transition hover:bg-navy hover:text-white"
                 aria-label="پاککردنەوە"
               >
                 <X className="h-4 w-4" />
