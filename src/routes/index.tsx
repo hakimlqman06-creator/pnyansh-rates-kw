@@ -117,7 +117,7 @@ function Dashboard() {
           <h2 className="text-2xl font-bold text-navy sm:text-3xl">
             گەڕان بۆ نرخی گواستنەوە
           </h2>
-          <p className="mt-2 text-sm text-muted">
+          <p className="mt-2 text-sm text-muted-foreground">
             ناوی ویلایەت یان شار بنووسە بە ئینگلیزی — ئەنجامەکان دیار دەبن
           </p>
 
