@@ -89,13 +89,14 @@ function Dashboard() {
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="Texas, Los Angeles, Miami..."
-              className="w-full rounded-2xl border-2 border-[#1f2937] bg-white py-4 pl-14 pr-14 text-right text-base text-ink shadow-soft outline-none transition placeholder:text-[#4b5563] focus:border-navy focus:ring-4 focus:ring-navy/10"
+              className="w-full rounded-2xl border-2 border-[#111827] bg-white py-4 pl-16 pr-14 text-right text-base text-ink shadow-[0_2px_8px_rgba(0,0,0,0.08)] outline-none transition placeholder:text-[#374151] focus:border-navy focus:shadow-[0_4px_12px_rgba(0,0,0,0.12)] focus:ring-4 focus:ring-navy/10"
             />
             {q && (
               <button
-                onClick={() => setQ("")}
-                className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-navy/10 p-2 text-ink transition hover:bg-navy hover:text-white"
-                aria-label="پاککردنەوە"
+                type="button"
+                onClick={() => setQ(q.slice(0, -1))}
+                className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-navy p-2.5 text-white shadow-sm transition hover:bg-navy/90 active:scale-95"
+                aria-label="سڕینەوەی پیتێک"
               >
                 <X className="h-4 w-4" />
               </button>
