@@ -111,7 +111,7 @@ function Dashboard() {
 
 
       {/* Hero + Search */}
-      <section className="border-b border-navy/10 bg-gradient-to-b from-navy/5 to-transparent">
+      <section className="border-b border-navy/10 bg-white">
         <div className="mx-auto max-w-3xl px-5 py-10 text-center sm:py-14">
           <h2 className="text-2xl font-bold text-navy sm:text-3xl">
             گەڕان بۆ نرخی گواستنەوە
@@ -146,6 +146,7 @@ function Dashboard() {
           </p>
         </div>
       </section>
+
 
       {/* Results */}
       <main className="mx-auto max-w-6xl px-5 py-8">
