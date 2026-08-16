@@ -112,7 +112,7 @@ function Dashboard() {
 
       {/* Hero + Search */}
       <section className="border-b border-navy/10 bg-gradient-to-b from-navy/5 to-transparent">
-        <div className="mx-auto max-w-3xl px-5 py-10 text-center sm:py-14">
+        <div className="mx-auto max-w-3xl px-5 pb-10 pt-12 text-center sm:pb-14 sm:pt-16">
           <h2 className="text-2xl font-bold text-navy sm:text-3xl">
             گەڕان بۆ نرخی گواستنەوە
           </h2>
