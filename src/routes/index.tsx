@@ -41,17 +41,17 @@ function Dashboard() {
     <div dir="rtl" className="min-h-screen bg-canvas font-kurdish text-ink">
       {/* Header */}
       <header className="border-b border-navy/10 bg-navy text-white">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-6 sm:py-7">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-7 sm:py-8">
           {/* Logo / title */}
           <div className="flex min-w-0 items-center gap-4">
             <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-white/10 ring-1 ring-white/20">
               <Truck className="h-6 w-6" />
             </div>
             <div className="min-w-0">
-              <h1 className="truncate text-lg font-bold leading-tight sm:text-xl">
+              <h1 className="truncate text-base font-bold leading-tight sm:text-lg">
                 گواستنەوەی ئۆتۆمبێل
               </h1>
-              <p dir="ltr" className="truncate text-right text-xs text-white sm:text-sm">
+              <p dir="ltr" className="mt-0.5 truncate text-right text-sm text-white sm:text-base">
                 PNYANSH CARS SHIPPING
               </p>
             </div>
@@ -112,7 +112,7 @@ function Dashboard() {
 
       {/* Hero + Search */}
       <section className="border-b border-navy/10 bg-gradient-to-b from-navy/5 to-transparent">
-        <div className="mx-auto max-w-3xl px-5 py-10 text-center sm:py-14">
+        <div className="mx-auto max-w-3xl px-5 pb-10 pt-12 text-center sm:pb-14 sm:pt-16">
           <h2 className="text-2xl font-bold text-navy sm:text-3xl">
             گەڕان بۆ نرخی گواستنەوە
           </h2>
