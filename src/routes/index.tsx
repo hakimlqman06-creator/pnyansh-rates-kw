@@ -41,8 +41,9 @@ function Dashboard() {
     <div dir="rtl" className="min-h-screen bg-canvas font-kurdish text-ink">
       {/* Header */}
       <header className="border-b border-navy/10 bg-navy text-white">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-5 sm:py-6">
-          <div className="flex items-center gap-4">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-5 sm:py-6">
+          {/* Logo / title */}
+          <div className="flex min-w-0 items-center gap-4">
             <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-white/10 ring-1 ring-white/20">
               <Truck className="h-6 w-6" />
             </div>
@@ -56,7 +57,8 @@ function Dashboard() {
             </div>
           </div>
 
-          <nav className="flex items-center gap-2 sm:gap-3" aria-label="ناوبەرگری سەرەوە">
+          {/* Desktop nav */}
+          <nav className="hidden items-center gap-2 sm:flex sm:gap-3" aria-label="ناوبەرگری سەرەوە">
             <a
               href="#details"
               className="rounded-lg px-3 py-2 text-sm font-medium text-white/90 transition hover:bg-white/10 hover:text-white"
@@ -70,7 +72,42 @@ function Dashboard() {
               دەربارەی کۆمپانیا
             </a>
           </nav>
+
+          {/* Mobile menu toggle — visually on the left in RTL */}
+          <button
+            type="button"
+            onClick={() => setMenuOpen((s) => !s)}
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10 transition hover:bg-white/20 sm:hidden"
+            aria-label={menuOpen ? "داخستنی مێنو" : "کردنەوەی مێنو"}
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
+
+        {/* Mobile menu dropdown */}
+        {menuOpen && (
+          <div className="border-t border-white/10 bg-navy px-5 pb-4 sm:hidden">
+            <nav className="flex flex-col gap-1 pt-3" aria-label="ناوبەرگری مۆبایل">
+              <a
+                href="#details"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-white transition hover:bg-white/10"
+              >
+                <Info className="h-4 w-4" />
+                وردەکاریەکان
+              </a>
+              <a
+                href="#about-company"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-white transition hover:bg-white/10"
+              >
+                <Building2 className="h-4 w-4" />
+                دەربارەی کۆمپانیا
+              </a>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Hero + Search */}
