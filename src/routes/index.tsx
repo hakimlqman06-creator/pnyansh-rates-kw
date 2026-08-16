@@ -24,6 +24,7 @@ function formatUSD(n: number) {
 function Dashboard() {
   const [q, setQ] = useState("");
   const [showRules, setShowRules] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const results = useMemo(() => {
     const t = q.trim().toLowerCase();
