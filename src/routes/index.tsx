@@ -1,6 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Search, Truck, Phone, Mail, MapPin, Info, ChevronDown, X, Menu, Building2 } from "lucide-react";
+import { Search, Truck, Phone, Mail, MapPin, Info, ChevronDown, X, Menu, Building2, FileText } from "lucide-react";
 import { shippingRates } from "@/data/shipping";
 
 export const Route = createFileRoute("/")({
@@ -71,6 +71,13 @@ function Dashboard() {
             >
               دەربارەی کۆمپانیا
             </a>
+            <Link
+              to="/customs"
+              className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-white/90 transition hover:bg-white/10 hover:text-white"
+            >
+              <FileText className="h-4 w-4" />
+              گومرگی ئیبراهیم خەلیل
+            </Link>
           </nav>
 
           {/* Mobile menu toggle — visually on the left in RTL */}
@@ -105,6 +112,14 @@ function Dashboard() {
                 <Building2 className="h-4 w-4" />
                 دەربارەی کۆمپانیا
               </a>
+              <Link
+                to="/customs"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-white transition hover:bg-white/10"
+              >
+                <FileText className="h-4 w-4" />
+                گومرگی ئیبراهیم خەلیل
+              </Link>
             </nav>
           </div>
         )}
