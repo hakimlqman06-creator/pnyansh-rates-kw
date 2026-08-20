@@ -120,6 +120,14 @@ function Dashboard() {
                 دەربارەی کۆمپانیا
               </a>
               <Link
+                to="/jabal-ali"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-white transition hover:bg-white/10"
+              >
+                <Ship className="h-4 w-4" />
+                جەبەل عەلی
+              </Link>
+              <Link
                 to="/customs"
                 onClick={() => setMenuOpen(false)}
                 className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-white transition hover:bg-white/10"
