@@ -1,8 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Search, Truck, Phone, Mail, MapPin, Info, ChevronDown, X, Menu, Building2, FileText } from "lucide-react";
+import { Search, Truck, Phone, Mail, MapPin, Info, ChevronDown, X, Menu, Building2, FileText, Ship } from "lucide-react";
 import { shippingRates } from "@/data/shipping";
-import DualRates from "@/components/DualRates";
 
 export const Route = createFileRoute("/")({
   head: () => ({
