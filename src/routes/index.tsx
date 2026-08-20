@@ -218,8 +218,6 @@ function Dashboard() {
         )}
       </main>
 
-      <DualRates />
-
       {/* Rules */}
       <section id="details" className="border-t border-navy/10 bg-white">
         <div className="mx-auto max-w-6xl px-5 py-8">
