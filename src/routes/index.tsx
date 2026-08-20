@@ -1,8 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Search, Truck, Phone, Mail, MapPin, Info, ChevronDown, X, Menu, Building2, FileText } from "lucide-react";
+import { Search, Truck, Phone, Mail, MapPin, Info, ChevronDown, X, Menu, Building2, FileText, Ship } from "lucide-react";
 import { shippingRates } from "@/data/shipping";
-import DualRates from "@/components/DualRates";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -73,6 +72,13 @@ function Dashboard() {
               دەربارەی کۆمپانیا
             </a>
             <Link
+              to="/jabal-ali"
+              className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-white/90 transition hover:bg-white/10 hover:text-white"
+            >
+              <Ship className="h-4 w-4" />
+              جەبەل عەلی
+            </Link>
+            <Link
               to="/customs"
               className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-white/90 transition hover:bg-white/10 hover:text-white"
             >
@@ -113,6 +119,14 @@ function Dashboard() {
                 <Building2 className="h-4 w-4" />
                 دەربارەی کۆمپانیا
               </a>
+              <Link
+                to="/jabal-ali"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-white transition hover:bg-white/10"
+              >
+                <Ship className="h-4 w-4" />
+                جەبەل عەلی
+              </Link>
               <Link
                 to="/customs"
                 onClick={() => setMenuOpen(false)}
@@ -218,8 +232,6 @@ function Dashboard() {
           </div>
         )}
       </main>
-
-      <DualRates />
 
       {/* Rules */}
       <section id="details" className="border-t border-navy/10 bg-white">

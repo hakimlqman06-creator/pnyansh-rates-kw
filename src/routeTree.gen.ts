@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as JabalAliRouteImport } from './routes/jabal-ali'
 import { Route as CustomsRouteImport } from './routes/customs'
 import { Route as IndexRouteImport } from './routes/index'
 
+const JabalAliRoute = JabalAliRouteImport.update({
+  id: '/jabal-ali',
+  path: '/jabal-ali',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CustomsRoute = CustomsRouteImport.update({
   id: '/customs',
   path: '/customs',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/customs': typeof CustomsRoute
+  '/jabal-ali': typeof JabalAliRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/customs': typeof CustomsRoute
+  '/jabal-ali': typeof JabalAliRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/customs': typeof CustomsRoute
+  '/jabal-ali': typeof JabalAliRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/customs'
+  fullPaths: '/' | '/customs' | '/jabal-ali'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/customs'
-  id: '__root__' | '/' | '/customs'
+  to: '/' | '/customs' | '/jabal-ali'
+  id: '__root__' | '/' | '/customs' | '/jabal-ali'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CustomsRoute: typeof CustomsRoute
+  JabalAliRoute: typeof JabalAliRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/jabal-ali': {
+      id: '/jabal-ali'
+      path: '/jabal-ali'
+      fullPath: '/jabal-ali'
+      preLoaderRoute: typeof JabalAliRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/customs': {
       id: '/customs'
       path: '/customs'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CustomsRoute: CustomsRoute,
+  JabalAliRoute: JabalAliRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
