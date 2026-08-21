@@ -3,17 +3,23 @@
 @import "tw-animate-css";
 
 @theme {
-  --color-navy: oklch(0.28 0.07 260);
-  --color-navy-soft: oklch(0.42 0.09 260);
-  --color-canvas: oklch(0.985 0.005 250);
-  --color-ink: oklch(0.22 0.02 260);
-  --color-muted: oklch(0.22 0.02 260);
   --shadow-soft: 0 1px 2px rgb(15 23 42 / 0.04), 0 6px 20px -8px rgb(15 23 42 / 0.08);
   --shadow-lift: 0 4px 8px rgb(15 23 42 / 0.06), 0 20px 40px -12px rgb(15 23 42 / 0.18);
   --font-kurdish: "Noto Kufi Arabic", "Noto Naskh Arabic", ui-sans-serif, system-ui, sans-serif;
 }
 
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-soft: var(--navy-soft);
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-success: var(--success);
+}
+
 @custom-variant dark (&:is(.dark *));
+
 
 /*
  * Design system definition.
