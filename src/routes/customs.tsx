@@ -76,7 +76,7 @@ function CustomsPage() {
       </header>
 
       {/* Service provider / contact */}
-      <section className="border-b border-navy/10 bg-white">
+      <section className="border-b border-navy/10 bg-surface">
         <div className="mx-auto max-w-6xl px-5 py-8">
           <h2 className="text-xl font-bold text-navy sm:text-2xl">
             دەرکردن و تەخلیسی گومرگی ئۆتۆمبێل، کەلوپەل و ماکینە
@@ -123,7 +123,7 @@ function CustomsPage() {
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="BMW, MERCEDES GLE, صالون 4 بستن..."
-              className="w-full rounded-2xl border-2 border-[#111827] bg-white py-4 pl-16 pr-14 text-right text-base text-ink shadow-[0_2px_8px_rgba(0,0,0,0.08)] outline-none transition placeholder:text-[#374151] focus:border-navy focus:ring-4 focus:ring-navy/10"
+              className="w-full rounded-2xl border-2 border-ink/70 bg-surface py-4 pl-16 pr-14 text-right text-base text-ink shadow-[0_2px_8px_rgba(0,0,0,0.08)] outline-none transition placeholder:text-ink/60 focus:border-navy focus:ring-4 focus:ring-navy/10"
             />
             {q && (
               <button
@@ -136,19 +136,19 @@ function CustomsPage() {
               </button>
             )}
           </div>
-          <p className="mt-4 text-xs text-muted">{total} تۆمار</p>
+          <p className="mt-4 text-xs text-ink-soft">{total} تۆمار</p>
         </div>
       </section>
 
       {/* Tables */}
       <main className="mx-auto max-w-6xl space-y-8 px-5 py-10">
         {sections.length === 0 ? (
-          <div className="rounded-2xl border border-dashed border-navy/20 bg-white p-10 text-center">
+          <div className="rounded-2xl border border-dashed border-navy/20 bg-surface p-10 text-center">
             <p className="text-sm text-ink">هیچ ئەنجامێک نەدۆزرایەوە</p>
           </div>
         ) : (
           sections.map((s) => (
-            <section key={s.title} className="overflow-hidden rounded-2xl border border-navy/10 bg-white shadow-soft">
+            <section key={s.title} className="overflow-hidden rounded-2xl border border-navy/10 bg-surface shadow-soft">
               <div className="flex items-center justify-between gap-3 border-b border-navy/10 bg-navy px-5 py-3.5 text-white">
                 <h3 className="truncate text-sm font-bold sm:text-base">{s.title}</h3>
                 <span className="shrink-0 rounded-lg bg-white/10 px-2.5 py-1 text-xs font-bold">
