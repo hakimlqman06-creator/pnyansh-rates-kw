@@ -77,7 +77,7 @@ function JabalAliPage() {
           <h2 className="text-2xl font-bold text-navy sm:text-3xl">
             گەڕان بۆ نرخی جەبەل عەلی
           </h2>
-          <p className="mt-2 text-sm text-muted">
+          <p className="mt-2 text-sm text-ink-soft">
             ناوی ویلایەت یان شار بنووسە بە ئینگلیزی — ئەنجامەکان دیار دەبن
           </p>
 
@@ -88,7 +88,7 @@ function JabalAliPage() {
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="Texas, Los Angeles, Miami..."
-              className="w-full rounded-2xl border-2 border-[#111827] bg-white py-4 pl-16 pr-14 text-right text-base text-ink shadow-[0_2px_8px_rgba(0,0,0,0.08)] outline-none transition placeholder:text-[#374151] focus:border-navy focus:shadow-[0_4px_12px_rgba(0,0,0,0.12)] focus:ring-4 focus:ring-navy/10"
+              className="w-full rounded-2xl border-2 border-ink/70 bg-surface py-4 pl-16 pr-14 text-right text-base text-ink shadow-[0_2px_8px_rgba(0,0,0,0.08)] outline-none transition placeholder:text-ink/60 focus:border-navy focus:shadow-[0_4px_12px_rgba(0,0,0,0.12)] focus:ring-4 focus:ring-navy/10"
             />
             {q && (
               <button
@@ -102,7 +102,7 @@ function JabalAliPage() {
             )}
           </div>
 
-          <p className="mt-4 text-xs text-muted">
+          <p className="mt-4 text-xs text-ink-soft">
             {results.length} ئەنجام لە {jabalAliRates.length} تۆمار
           </p>
         </div>
@@ -111,15 +111,15 @@ function JabalAliPage() {
       {/* Results */}
       <main className="mx-auto max-w-6xl px-5 py-8">
         {results.length === 0 ? (
-          <div className="rounded-2xl border border-dashed border-navy/20 bg-white p-10 text-center">
-            <p className="text-sm text-muted">هیچ ئەنجامێک نەدۆزرایەوە</p>
+          <div className="rounded-2xl border border-dashed border-navy/20 bg-surface p-10 text-center">
+            <p className="text-sm text-ink-soft">هیچ ئەنجامێک نەدۆزرایەوە</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {results.map((r, i) => (
               <article
                 key={i}
-                className="group rounded-2xl border border-navy/10 bg-white p-5 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lift"
+                className="group rounded-2xl border border-navy/10 bg-surface p-5 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lift"
               >
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
@@ -155,7 +155,7 @@ function JabalAliPage() {
 
                 <div className="mt-4 flex items-center justify-between border-t border-navy/5 pt-3">
                   <span className="text-[11px] font-semibold text-ink">تێچووی گواستنەوە</span>
-                  <span className="text-[11px] font-bold text-emerald-700">بەردەستە</span>
+                  <span className="text-[11px] font-bold text-success">بەردەستە</span>
                 </div>
               </article>
             ))}
